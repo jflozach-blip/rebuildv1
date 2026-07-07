@@ -1,5 +1,11 @@
+'use strict';
+
 (function loadModalHelpers() {
-  const script = document.createElement('script');
-  script.src = 'modals.js';
-  document.head.appendChild(script);
+  const modalScript = document.createElement('script');
+  modalScript.src = 'modals.js';
+  document.head.appendChild(modalScript);
+
+  const summaryImageScript = document.createElement('script');
+  summaryImageScript.src = 'summary-image.js';
+  document.head.appendChild(summaryImageScript);
 })();
