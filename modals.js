@@ -296,11 +296,14 @@ function ensureAllDaysQuickViewTile() {
       <div class="all-days-mini-grid" id="allDaysQuickMini"></div>
     `;
 
-    const weeklyTotals = document.querySelector('.summary-strip.weekly-quick-view');
-    const header = document.querySelector('.header');
+  const weekTools = document.querySelector('.week-tools-tile');
+const header = document.querySelector('.header');
 
-    if (weeklyTotals) weeklyTotals.insertAdjacentElement('afterend', tile);
-    else if (header) header.appendChild(tile);
+if (weekTools) {
+  weekTools.insertAdjacentElement('beforebegin', tile);
+} else if (header) {
+  header.prepend(tile);
+}
   }
 
   if (!document.getElementById('allDaysQuickModalBackdrop')) {
