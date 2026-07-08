@@ -1,6 +1,6 @@
 'use strict';
 
-const WEEKLY_SUMMARY_IMAGE_URL = 'https://uploads.onecompiler.io/44uengjdp/44uhce5ff/Design%2034_upscale.jpg';
+const WEEKLY_SUMMARY_IMAGE_URL = 'https://uploads.onecompiler.io/44uengjdp/44ujj4brz/Lottery%20Poster%202%20info.png';
 
 function ensureWeeklySummaryImageStyles() {
   if (document.getElementById('weeklySummaryImageStyles')) return;
